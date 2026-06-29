@@ -373,21 +373,8 @@ h1 em {
   background: rgba(255,255,255,.045);
 }
 .tier-featured { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.22); }
-.popular {
-  position: absolute;
-  right: 20px;
-  top: 18px;
-  font-size: .68rem;
-  font-weight: 700;
-  color: #15121b;
-  background: white;
-  padding: 5px 9px;
-  border-radius: 999px;
-}
 .tier-top > p:first-of-type { margin: 12px 0 4px; color: rgba(255,255,255,.54); font-size: .77rem; text-transform: uppercase; letter-spacing: .1em; }
 .tier h3 { margin: 0; font-size: 1.55rem; font-weight: 600; }
-.tier .price { margin: 8px 0 0; color: rgba(255,255,255,.6); font-size: .8rem; }
-.tier .price strong { color: white; font-size: 1.05rem; }
 .tier-dot { display: block; width: 11px; height: 11px; border-radius: 50%; }
 .dot-blue { background: rgba(71,173,255,.8); }
 .dot-purple { background: rgba(215,131,255,.8); }
@@ -473,7 +460,6 @@ footer a { color: white; text-underline-offset: 4px; }
   .video-frame { aspect-ratio: 9/16; }
   .club { padding-top: 90px; padding-bottom: 90px; }
   .tier { grid-template-columns: 1fr; gap: 20px; padding: 25px 22px; }
-  .popular { position: static; display: inline-block; width: fit-content; margin-bottom: 12px; }
   .final-cta { padding: 110px 20px; }
   footer { grid-template-columns: 1fr; align-items: start; padding-top: 60px; }
   .copyright { grid-column: 1; }
