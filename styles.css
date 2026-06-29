@@ -93,7 +93,12 @@ h1 {
   font-weight: 700;
 }
 h1 em {
+  display: inline-block;
   font-style: normal;
+  font-size: clamp(2rem, 10.5vw, 6.2rem);
+  line-height: 1.02;
+  letter-spacing: -.06em;
+  white-space: nowrap;
   color: transparent;
   background: linear-gradient(90deg, var(--blue), #9a4dff 48%, #ff278a);
   -webkit-background-clip: text;
