@@ -100,6 +100,10 @@ nav a {
   line-height: 1;
   letter-spacing: .15em;
 }
+.manifesto .section-kicker {
+  font-size: .68rem;
+  letter-spacing: .14em;
+}
 .eyebrow span,
 .section-kicker span {
   flex: 0 0 24px;
