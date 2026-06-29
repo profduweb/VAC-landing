@@ -340,56 +340,22 @@ h1 em {
 .video-frame { width: 100%; aspect-ratio: 16/9; border: 0; display: block; min-height: 580px; }
 
 .club {
-  display: grid;
-  grid-template-columns: .9fr 1.6fr;
-  gap: 72px;
   padding: 120px max(24px, calc((100vw - var(--max)) / 2));
   color: white;
   background: #15121b;
 }
 .club .section-kicker { color: rgba(255,255,255,.56); }
-.club-intro > p:not(.section-kicker) { max-width: 480px; margin: 32px 0; color: rgba(255,255,255,.7); line-height: 1.7; }
-.button-light { color: #15121b; background: white; }
-.support-link {
-  display: block;
-  width: fit-content;
-  margin-top: 20px;
-  color: rgba(255,255,255,.72);
-  font-size: .9rem;
-  text-underline-offset: 4px;
-}
-.club-content {
-  display: grid;
-  gap: 16px;
-}
-.tiers { display: grid; gap: 14px; }
-.tier {
-  position: relative;
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 35px;
-  padding: 28px 30px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.045);
-}
-.tier-featured { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.22); }
-.tier-top > p:first-of-type { margin: 12px 0 4px; color: rgba(255,255,255,.54); font-size: .77rem; text-transform: uppercase; letter-spacing: .1em; }
-.tier h3 { margin: 0; font-size: 1.55rem; font-weight: 600; }
-.tier-dot { display: block; width: 11px; height: 11px; border-radius: 50%; }
-.dot-blue { background: rgba(71,173,255,.8); }
-.dot-purple { background: rgba(215,131,255,.8); }
-.dot-pink { background: rgba(255,101,167,.8); }
-.tier ul { align-self: center; margin: 0; padding: 0; list-style: none; color: rgba(255,255,255,.76); font-size: .9rem; line-height: 1.55; }
-.tier li { position: relative; padding: 6px 0 6px 22px; }
-.tier li::before { content: "✓"; position: absolute; left: 0; color: white; }
-.club-note {
+.club-intro {
   max-width: 760px;
-  margin: 2px 0 0;
-  color: rgba(255,255,255,.48);
-  font-size: .8rem;
-  line-height: 1.65;
 }
-.club-note a {
+.club-intro > p:not(.section-kicker) {
+  max-width: 760px;
+  margin: 32px 0 0;
+  color: rgba(255,255,255,.7);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+.club-intro a {
   color: rgba(255,255,255,.72);
   text-underline-offset: 3px;
 }
@@ -459,7 +425,6 @@ footer a { color: white; text-underline-offset: 4px; }
   .video-facade, .video-frame { min-height: 470px; }
   .video-frame { aspect-ratio: 9/16; }
   .club { padding-top: 90px; padding-bottom: 90px; }
-  .tier { grid-template-columns: 1fr; gap: 20px; padding: 25px 22px; }
   .final-cta { padding: 110px 20px; }
   footer { grid-template-columns: 1fr; align-items: start; padding-top: 60px; }
   .copyright { grid-column: 1; }
