@@ -206,7 +206,7 @@ h1 em {
   font-weight: 600;
 }
 .manifesto h2 span, .final-cta h2 span { color: #aaa6a5; }
-.manifesto > p:last-child {
+.manifesto > p {
   max-width: 680px;
   margin: 36px 0 0 auto;
   font-size: 1.18rem;
@@ -214,7 +214,31 @@ h1 em {
   color: var(--muted);
 }
 
-.topics { padding: 0 24px 115px; max-width: var(--max); margin: auto; }
+.usage-list {
+  max-width: 680px;
+  margin: 28px 0 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  color: var(--muted);
+}
+.usage-list li {
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.55;
+}
+.usage-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink));
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -413,12 +437,11 @@ footer a { color: white; text-underline-offset: 4px; }
   .button { width: 100%; }
   .hero-mark { right: -62vw; opacity: .18; }
   .mark { width: 105px; }
-  .manifesto, .topics { padding-top: 90px; padding-bottom: 90px; }
+  .manifesto { padding-top: 90px; padding-bottom: 90px; }
   .manifesto h2, .section-heading h2, .club h2, .final-cta h2 { font-size: 2.6rem; }
-  .manifesto > p:last-child { margin-top: 35px; font-size: 1.05rem; }
+  .manifesto > p { margin-top: 35px; font-size: 1.05rem; }
+  .usage-list { margin-top: 24px; }
   .section-heading { margin-bottom: 42px; }
-  .topic { grid-template-columns: 44px 1fr; gap: 12px; padding: 28px 0; }
-  .topic h3 { font-size: 1.55rem; }
   .video-section { padding-top: 90px; padding-bottom: 90px; }
   .video-facade, .video-frame { min-height: 470px; }
   .video-frame { aspect-ratio: 9/16; }
