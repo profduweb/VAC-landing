@@ -76,15 +76,26 @@ nav a {
 }
 .hero-copy { position: relative; z-index: 2; max-width: 790px; }
 .eyebrow, .section-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
   margin: 0 0 28px;
   font-family: "Manrope", sans-serif;
   font-size: .76rem;
   font-weight: 800;
   letter-spacing: .15em;
   text-transform: uppercase;
+  text-align: left;
 }
-.eyebrow { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.66); }
-.eyebrow span { width: 24px; height: 2px; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink)); }
+.eyebrow { color: rgba(255,255,255,.66); }
+.eyebrow span,
+.section-kicker span {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink));
+}
 h1, h2, h3 { font-family: "Manrope", sans-serif; letter-spacing: -.045em; }
 h1 {
   margin: 0;
