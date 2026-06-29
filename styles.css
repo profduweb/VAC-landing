@@ -135,6 +135,35 @@ h1 em {
 .play-icon { font-size: .75rem; }
 .byline { margin-top: 28px; color: rgba(255,255,255,.46); font-size: .86rem; }
 .byline a { color: rgba(255,255,255,.72); text-underline-offset: 4px; }
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.social-links a {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: rgba(255,255,255,.68);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+  background: rgba(255,255,255,.045);
+  text-decoration: none;
+  transition: color .2s, background .2s, border-color .2s, transform .2s;
+}
+.social-links a:hover {
+  color: white;
+  border-color: rgba(255,255,255,.3);
+  background: rgba(255,255,255,.1);
+  transform: translateY(-2px);
+}
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
 
 .hero-mark {
   position: absolute;
